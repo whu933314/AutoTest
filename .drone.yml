@@ -1,7 +1,7 @@
 pipeline:
   Stage 1:
     image: breezestar/mars-test:0.1
-    command:
+    commands:
        - ip addr
 
 
