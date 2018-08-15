@@ -1,21 +1,21 @@
-pipeline:
-  Stage 1:
-    image: breezestars/mars-test:0.1
-    commands:
-       - ip addr
-
-  backend:
-    image: golang
-    secrets: [ test ]
-    commands:
-      - echo "backend testing"
-      - echo $TEST
- 
-  frontend:
-    image: golang
-    commands:
-      - echo "frontend testing"
-
+#pipeline:
+#  Stage 1:
+#    image: breezestars/mars-test:0.1
+#    commands:
+#       - ip addr
+#
+#  backend:
+#    image: golang
+#    secrets: [ test ]
+#    commands:
+#      - echo "backend testing"
+#      - echo $TEST
+# 
+#  frontend:
+#    image: golang
+#    commands:
+#      - echo "frontend testing"
+#
 version: '{build}'
 image: 'Visual Studio 2017'
 platform: x64
