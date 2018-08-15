@@ -4,5 +4,17 @@ pipeline:
     commands:
        - ip addr
 
+  backend:
+    image: golang
+    secrets: [ test ]
+    commands:
+      - echo "backend testing"
+      - echo $TEST
+ 
+  frontend:
+    image: golang
+    commands:
+      - echo "frontend testing"
+
 
 
